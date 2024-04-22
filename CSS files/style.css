@@ -1,0 +1,145 @@
+
+
+
+
+
+
+
+
+
+
+:root{
+    --font1:"Comfortaa", cursive;
+    --font2:"Nerko One", cursive;
+    --main_color:#3a497b;
+    --second_color:#4a6792;
+    --third_color:#0dcaf0;
+
+}
+
+
+
+
+/* header{
+    max-height: 30vh ;
+} */
+header img{
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+
+
+
+/* utilities */
+.bg3{
+    background-color: var(--third_color);
+}
+.font1{
+    font-family: var(--font1);
+}
+.font2{
+    font-family: var(--font2);
+}
+.nav_bg{
+background-color: var(--main_color);
+}
+.letter_spacing{
+    letter-spacing: .1rem;
+}
+.fs-sm{
+    font-size: .8rem;
+    font-weight: 700;
+    transition: .4s all ease-in-out;
+    color: #fff !important;
+}
+.fs-sm2{
+    font-size: .9rem;
+    font-weight: 400;
+    font-family: var(--font2) !important;
+}
+
+.active{
+    color: var(--third_color) !important;
+    font-weight: 400;
+}
+.nav-link{
+    transition: .4s all ease-in-out;
+}
+.nav-link:hover{
+    color: var(--third_color) !important;
+    font-weight: 400;
+}
+
+.navbar-brand{
+    box-sizing: content-box;
+    max-width: min-content;
+}
+.navbar{
+    margin-top: -30px !important;
+
+}
+
+
+.card{
+    filter: grayscale(.7);
+    transition: .4s all ease-in-out;
+}
+
+.card:hover{
+    cursor: pointer;
+    filter: none;
+}
+
+.shortDesc{
+    
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    padding: 20px 0px;
+}
+
+
+
+#Loader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.loader {
+    width: 6rem;
+    height: 6rem;
+    
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    z-index:999 ;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 

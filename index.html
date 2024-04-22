@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- data-bs-theme="dark" -->
+<html lang="en" data-bs-theme="dark" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games API</title>
+    <!-- Bootstrap -5.3.2 -->
+    <link rel="stylesheet" href="CSS files/bootstrap.min.css" />
+    <!-- fontawesome-free-6.5.1-web -->
+    <link rel="stylesheet" href="CSS files/all.min.css" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="CSS files/style.css" />
+    <!-- FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap" rel="stylesheet">
+  </head>
+  <body class="position-relative" data-bs-spy="scroll" data-bs-target="#mainNav">
+
+  <section id="games" class="d-block">
+    <header>
+      <img src="images/wraper.png" class="w-100 h-100" alt="game photo for site header">
+    </header>
+
+
+ 
+        <nav class="navbar rounded-5 shadow-lg navbar-expand-lg nav_bg  col-lg-9 col-md-7 m-auto position-sticky top-0 z-3 " id="mainNav">
+          <div class="container">
+            <a class="navbar-brand d-flex align-items-center m-0" href="#">
+              <img
+                src="images/logo.png"
+                alt="Logo"
+                width="25%"
+                class="d-inline-block"
+              />
+              <div>
+                <h5 class="font2 letter_spacing text-uppercase fs-3 fw-lighter"> GAME REVIEWS</h5>
+                
+              </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav ms-auto text-center fw-semibold  mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link fs-sm font1  active" aria-current="page" href="#">MMORPG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-sm font1 " href="#">SHOOTER</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-sm font1 " href="#">SAILING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-sm font1 " href="#">PERMADEATH</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-sm font1 " href="#">SUPERHERO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-sm font1 " href="#">PIXEL</a>
+                </li>
+              </ul>
+            
+            </div>
+          </div>
+        </nav>
+    
+        <section class="games_data py-5 px-md-5 px-1">
+          <div class="container-fluid px-md-5 px-1 ">
+            <div id="gameWillAdd" class="row g-4">
+              <!-- <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card border-black  pb-1">
+                  <img src="images/test.jpg" class="card-img-top w-100 px-3 pt-3" alt="">
+                  <div class="card-body  px-3">
+                    <div class=" d-flex justify-content-between">
+                      <h4 class="text-capitalize fs-5 font2">game name</h4>
+                      <span class="bg-primary rounded-3 fw-semibold fs-6 py-1 px-2 text-capitalize font1">free</span>
+                    </div>
+                    <p class="text-secondary text-center font1 fw-bold">game discription</p>
+                    
+                  </div>
+                  <div class="card-footer bg-transparent d-flex justify-content-between py-2 border-black">
+                    <span class="fs-sm rounded-3 bg-body-secondary font1 fw-semibold p-1">category</span>
+                    <span class="fs-sm rounded-3 bg-body-secondary font1 fw-semibold p-1">platform</span>
+                  </div>
+                </div>
+              </div> -->
+  
+            </div>
+          </div>
+
+        </section>
+
+</section>
+  
+<section id="Loader" class="d-none">
+  
+  <div class="row justify-content-center align-items-center h-100">
+    <span class="loader"></span>
+  </div>
+
+</section>
+
+<section id="gameDetails" class="py-4 d-none">
+  <div  class="container">
+    <div class="row justify-content-between  flex-nowrap">
+      <h2 class="font2 fs-1 letter_spacing">Details Game</h2>
+      <button id="closeBtn" type="button" class="btn-close" aria-label="Close"></button>
+      </div>
+      <div id="gameDetailWillAdd" class="row pt-4">
+     
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    <!-- fontawesome-free-6.5.1-web -->
+    <script src="JsFiles/all.min.js"></script>
+    <!-- Bootstrap -5.3.2 -->
+    <script src="JsFiles/bootstrap.bundle.min.js"></script>
+    <!-- JS File -->
+    <script type="module" src="JsFiles/index.js" ></script>
+    <!-- <script type="module" src="JsFiles/APIs/games.js" ></script> -->
+  </body>
+</html>
