@@ -53,7 +53,7 @@ export class DisplayDetails{
         <h5 class="font1 my-3 py-1  letter_spacing">Platform: <span class="rounded-3 fs-sm2 bg3 text-black py-1 px-2">${details.platform}</span></h5>
         <h5 class="font1 my-3 py-1  letter_spacing">Status: <span class="rounded-3 fs-sm2 bg3 text-black py-1 px-2">${details.status}</span></h5>
         <p class="font1" >${details.description}</p>
-        <button class="font1 btn btn-outline-warning text-white py-2 px-3">Show Game</button>
+        <button class="font1 btn btn-outline-warning text-white py-2 px-3"><a class='text-decoration-none text-white' href='${details.game_url}'>Show Game</a></button>
       </div>`
 
         return cartona;
